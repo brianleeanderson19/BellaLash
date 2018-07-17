@@ -242,3 +242,29 @@ div.col.s12.links {
 #comment {
   width: 90%;
 }
+
+@media (max-width: 600px) {
+  body {
+    background: linear-gradient(var(--Green), var(--Blue));
+  }
+
+  .halfCard {
+    margin-left: 0px;
+  }
+
+  .main {
+    margin: 0px;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  .brand-logo {
+    right: 10px;
+  }
+
+  .input-field {
+    width: 100% !important;
+  }
+}

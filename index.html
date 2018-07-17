@@ -11,13 +11,15 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- JQuery CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
+<!-- SideBar -->
     <div class="row">
       <div class="col s12">
-        <div class="sideBar">
+        <div class="sideBar hide-on-small-only">
           <div class="col s12 whiteLine"></div>
           <div id="sideBarIcons">
             <a href="#" class="col s12"><i class="material-icons col s12 sideBarIcon">dashboard</i>DASHBOARD</a>
@@ -28,8 +30,8 @@
       </div>
     </div>
 
-
     <div class="main">
+<!-- Nav Bar -->
     <nav>
       <div class="nav-wrapper">
         <div class="brand-logo">SETTINGS</div>
@@ -40,19 +42,19 @@
         </ul>
       </div>
     </nav>
-
+<!-- Start of Card -->
     <div class="row">
     <div class="col s12">
       <div class="card-panel white mainCard">
         <div class="halfCard">
-
+<!-- Notification Section -->
           <div class="notificationsSection">
             <div class="row">
               <div class="col s12 m6 titleAndSwitch">
                 <div class="col s12 m6 notificationTitle">
                   <h6>Notifications</h6>
                 </div>
-                <!-- Switch -->
+<!-- Switch -->
                 <div class="col s12 m6 switch">
                   <label>
                     <input type="checkbox">
@@ -61,7 +63,6 @@
                 </div>
               </div>
             </div>
-
             <p>How many days do you want to pass by before a <br /> notification is sent?</p>
             <div class="row">
               <div class="input-field col s1 numField">
@@ -70,7 +71,7 @@
               </div>
             </div>
           </div>
-
+<!-- Email Section -->
           <div class="emailsSection">
             <h6>Emails</h6>
             <p>Set the default emails.</p>
@@ -97,7 +98,7 @@
                 </form>
             </div>
           </div>
-
+<!-- Text Message Section -->
           <div class="textMessageSection">
             <h6>Text Messages</h6>
             <p>Enter your cell phone number to recieve texts from loop minded.</p>
@@ -108,14 +109,13 @@
               </div>
             </div>
           </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
+<!-- Messages Slider -->
   <div id="wholeSlideIn">
     <div class="newConversation">
       <a href="#"><i class="material-icons theArrow">arrow_back</i></a>
@@ -144,8 +144,6 @@
     </div>
     </div>
   </div>
-
-
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
