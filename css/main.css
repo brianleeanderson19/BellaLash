@@ -11,6 +11,7 @@ body {
 .main {
   margin-left: 10%;
   margin-top: -20px;
+  position: relative;
 }
 
 .brand-logo {
@@ -119,18 +120,17 @@ div.col.s12.m6.titleAndSwitch {
 }
 
 /* SLIDER */
-.wholeSlideIn {
+#wholeSlideIn {
   width: 380px;
-  height: 820px;
+  height: 940px;
   background-color: #fff;
   position: absolute;
-  left: 200px;
   border: 1px solid var(--Green);
   position: fixed;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   display: none;
-  visibility: hidden;
+  z-index: 1;
 }
 
 .newConversation {

@@ -34,7 +34,7 @@
         <div class="brand-logo">SETTINGS</div>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">My Company</a></li>
-          <li><a href="#" onclick="slideFunction()">Messages</a></li>
+          <li id="messages"><a href="#" onclick="slideFunction()">Messages</a></li>
           <li><a href="#"><i class="material-icons">menu</i></a></li>
         </ul>
       </div>
@@ -114,10 +114,11 @@
     </div>
   </div>
 
-  <div class="wholeSlideIn">
+
+  <div id="wholeSlideIn">
     <div class="newConversation">
-      <i class="material-icons theArrow">arrow_back</i>
-      <i class="material-icons theClose">close</i>
+      <a href="#"><i class="material-icons theArrow">arrow_back</i></a>
+      <a href="#" onclick="hideFunction()"><i class="material-icons theClose">close</i></a>
       <p>New Conversation</p>
     </div>
     <div class="plusPound">
@@ -142,6 +143,8 @@
     </div>
     </div>
   </div>
+
+
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
