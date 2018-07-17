@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BellaLashProject</title>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col s12">
+        <div class="sideBar">
+          <div class="col s12 whiteLine"></div>
+          <div id="sideBarIcons">
+            <a href="#" class="col s12"><i class="material-icons col s12 sideBarIcon">dashboard</i>DASHBOARD</a>
+            <a href="#" class="col s12"><i class="material-icons col s12 sideBarIcon">person</i>VENDOR</a>
+            <a href="#" class="col s12"><i class="material-icons col s12 sideBarIcon">description</i>PURCHASE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="brand-logo">SETTINGS</div>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">My Company</a></li>
+          <li><a href="#" onclick="slideFunction()">Messages</a></li>
+          <li><a href="#"><i class="material-icons">menu</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+    <div class="col s12">
+      <div class="card-panel white mainCard">
+        <div class="halfCard">
+
+          <div class="notificationsSection">
+            <div class="row">
+              <div class="col s12 m6 titleAndSwitch">
+                <div class="col s12 m6 notificationTitle">
+                  <h6>Notifications</h6>
+                </div>
+                <!-- Switch -->
+                <div class="col s12 m6 switch">
+                  <label>
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+              
+            <p>How many days do you want to pass by before a <br /> notification is sent?</p>
+            <div class="row">
+              <div class="input-field col s1 numField">
+                <input value="2" id="numOfDays" type="text" class="validate">
+                <label for="numOfDays"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="emailsSection">
+            <h6>Emails</h6>
+            <p>Set the default emails.</p>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s3 emailFields">
+                    <input id="shippingEmail" type="email" class="validate">
+                    <label for="shipping">Shipping:</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s3 emailFields">
+                    <input id="billingEmail" type="email" class="validate">
+                    <label for="billingEmail">Billing:</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input id="otherEmail" type="email" class="validate">
+                    <label for="otherEmail">Another Email:</label>
+                  </div>
+                </div>
+                </form>
+            </div>
+          </div>
+
+          <div class="textMessageSection">
+            <h6>Text Messages</h6>
+            <p>Enter your cell phone number to recieve texts from loop minded.</p>
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="cellNumber" type="text" class="validate">
+                <label for="first_name2">Cell Number:</label>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wholeSlideIn">
+    <div class="newConversation">
+      <i class="material-icons theArrow">arrow_back</i>
+      <i class="material-icons theClose">close</i>
+      <p>New Conversation</p>
+    </div>
+    <div class="plusPound">
+      <i class="material-icons theAdd">add</i><p id="hashTag">&#35;</p>
+    </div>
+    <div class="messageSpace"></div>
+    <div class="signoff">                        
+      <div class="row">
+        <div class="col s12 links">
+          <ul class="col s12">
+            <li id="conv" class="col s12 m4 white-text center"><a href="#">Conversations</a></li>
+            <li id="files" class="col s12 m4 white-text center"><a href="#">Files</a></li>
+            <li id="logs" class="col s12 m4 white-text center"><a href="#">Logs</a></li>
+          </ul>
+        </div>
+      </div>                                             
+    <div class="inputArea">
+      <form class="textbox">
+        <input type="textBox" name="textBox" id="comment">
+      </form>
+      <i class="material-icons theSend">send</i>
+    </div>
+    </div>
+  </div>    
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+      function slideFunction() {
+        $('.wholeSlideIn').show();
+      }
+    </script>
+  </body>
+</html>
